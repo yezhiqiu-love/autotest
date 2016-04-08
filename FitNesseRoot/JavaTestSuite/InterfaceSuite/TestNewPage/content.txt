@@ -1,0 +1,23 @@
+!***< Hidden
+
+
+!define TEST_SYSTEM {slim}
+
+
+'''此处导入后台代码包名'''
+!|import          |
+|eg               |
+|fitnesse.fixtures|
+
+
+*!
+'''此句话专门用来Debug'''
+!define COMMAND_PATTERN {java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044 -cp %p %m}
+
+
+
+'''测试脚本'''
+!| script|test debug|
+|set name|james     |
+|set age |66        |
+|check    |info   |nihao|

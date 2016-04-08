@@ -1,0 +1,16 @@
+!***< Hidden
+
+
+!define TEST_SYSTEM {slim}
+
+
+'''此处导入后台代码包名'''
+|import |
+|eg  |
+*!
+
+
+!|script |test debug|
+|set name | wushadong|
+|set age | 15|
+|check| info|
